@@ -16,7 +16,7 @@ let partOne = R.pipe(
 let partTwo = R.pipe(
   R.map(R.sum),
   R.sort(R.subtract),
-  R.reverse<number>,
+  R.reverse,
   R.curry(R.take)(3),
   R.sum,
 )(inventories)
